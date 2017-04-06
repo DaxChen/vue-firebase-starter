@@ -2,6 +2,9 @@
 
 > saySE website with firebase serverless, scaffold with vue-cli:webpack
 
+[![Standard - JavaScript Style
+Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
 ## Build Setup
 
 ``` bash

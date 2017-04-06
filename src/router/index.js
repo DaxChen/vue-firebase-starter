@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Landing from '@/views/Landing'
+import FourOhFour from '@/views/FourOhFour'
 
 Vue.use(Router)
 
@@ -13,7 +14,7 @@ export default new Router({
       path: '/',
       name: 'landing',
       component: Landing
-    }
-    // { path: '*', component: FourOhFour }
+    },
+    { path: '*', component: FourOhFour }
   ]
 })
