@@ -1,6 +1,5 @@
-# sayse-web-firebase
-
-> saySE website with firebase serverless, scaffold with vue-cli:webpack
+# vue-boilterplate
+my boilerplate with vue/vuex/vue(x)-router, with sass/prerendering, optionally muse-ui
 
 [![Standard - JavaScript Style
 Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
