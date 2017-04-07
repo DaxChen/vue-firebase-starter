@@ -5,6 +5,11 @@ import store from './store'
 import router from './router'
 import { sync } from 'vuex-router-sync'
 
+// vuetify
+import './stylus/main.styl'
+import Vuetify from 'vuetify'
+Vue.use(Vuetify)
+
 Vue.config.productionTip = false
 
 // sync the router with the vuex store.

@@ -1,5 +1,5 @@
 # vue-boilterplate
-my boilerplate with vue/vuex/vue(x)-router, with sass/prerendering, optionally muse-ui
+my boilerplate with vue/vuex/vue(x)-router, with sass/prerendering, vuetify (or muse-ui)
 
 [![Standard - JavaScript Style
 Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
@@ -41,3 +41,7 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## UI framework
+1. vuetify is here in the `master` branch
+2. muse-ui is in the `muse-ui` branch

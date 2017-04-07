@@ -1,0 +1,22 @@
+
+// this is the color pack bundled into vuetify style,
+// it includes some convenient classes,
+// see the very bottom of: https://vuetifyjs.com/style/colors
+// setting this to true increases css size ~30kb!
+$color-pack = false
+
+@import '../../node_modules/vuetify/src/stylus/settings/_colors'
+// see colors here:
+// https://vuetifyjs.com/style/colors
+$theme := {
+  primary: $blue.darken-2
+  accent: $blue.accent-2
+  secondary: $grey.darken-3
+  info: $blue.base
+  warning: $amber.base
+  error: $red.base
+  success: $green.base
+}
+
+// Available variables https://github.com/vuetifyjs/vuetify/blob/master/src/stylus/settings/_variables.styl
+@import '../../node_modules/vuetify/src/stylus/main'
