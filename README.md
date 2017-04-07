@@ -1,5 +1,5 @@
 # vue-boilterplate
-my boilerplate with vue/vuex/vue(x)-router, with sass/prerendering, optionally muse-ui
+my boilerplate with vue/vuex/vue(x)-router, with sass/prerendering, and muse-ui!
 
 [![Standard - JavaScript Style
 Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
