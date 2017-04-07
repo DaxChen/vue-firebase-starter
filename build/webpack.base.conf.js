@@ -21,12 +21,18 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
-      '@': resolve('src')
+      '@': resolve('src'),
+      '@muse-ui': 'muse-ui/src' // load muse-ui components separately
     }
   },
   module: {
     noParse: /es6-promise\.js$/, // avoid webpack shimming process
     rules: [
+      // load muse-ui components separately
+      {
+        test: /muse-ui.src.*?js$/,
+        loader: 'babel-loader'
+      },
       {
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',

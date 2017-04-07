@@ -5,6 +5,9 @@ import store from './store'
 import router from './router'
 import { sync } from 'vuex-router-sync'
 
+// muse-ui
+import '@muse-ui/styles/base.less'
+
 Vue.config.productionTip = false
 
 // sync the router with the vuex store.
