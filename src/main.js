@@ -5,6 +5,9 @@ import store from './store'
 import router from './router'
 import { sync } from 'vuex-router-sync'
 
+// vue-material
+import './vue-material-theme'
+
 Vue.config.productionTip = false
 
 // sync the router with the vuex store.
@@ -15,5 +18,6 @@ sync(store, router)
 new Vue({
   el: '#app',
   router,
+  store,
   render: h => h(App)
 })

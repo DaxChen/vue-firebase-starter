@@ -1,22 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <my-header />
+
+    <side-nav />
+
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import MyHeader from '@/components/MyHeader'
+import SideNav from '@/components/SideNav'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    MyHeader,
+    SideNav
+  }
 }
 </script>
 
 <style lang="sass">
-#app
-  font-family: 'Avenir', Helvetica, Arial, sans-serif
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
-  text-align: center
-  color: #2c3e50
-  margin-top: 60px
 </style>

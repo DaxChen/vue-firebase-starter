@@ -1,5 +1,6 @@
 <template>
-  <div class="hello">
+  <div class="landing">
+    <img src="../assets/logo.png" />
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -33,6 +34,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.landing {
+  text-align: center;
+}
+
 h1, h2 {
   font-weight: normal;
 }
