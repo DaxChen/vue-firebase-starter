@@ -3,18 +3,15 @@
     <!--<mu-icon-button icon="menu" slot="left"/>-->
     <router-link to="/" class="logo">Logo</router-link>
 
-    <!-- using button in appBar as link is currently not supported,
-      so use the button's @click event with $router.push hack...
-      see: https://github.com/museui/muse-ui/issues/39 -->
     <mu-flat-button
       label="Hello"
       slot="right"
-      @click="$router.push('/hello')"
+      to="/hello"
     />
     <mu-flat-button
       label="Aloha"
       slot="right"
-      @click="$router.push('/aloha')"
+      to="aloha"
     />
     <mu-icon-menu icon="more_vert" slot="right">
       <mu-menu-item title="Menu 1"/>
