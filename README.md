@@ -43,5 +43,7 @@ npm test
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 ## UI framework
-1. vuetify is here in the `master` branch
+1. vuetify is here in the `vuetify` branch
 2. muse-ui is in the `muse-ui` branch
+3. vue-material is in the `vue-material` branch
+
