@@ -4,9 +4,9 @@
     <router-link to="/" class="logo">Logo</router-link>
 
     <mu-flat-button
-      label="Hello"
+      label="Login"
       slot="right"
-      to="/hello"
+      to="/login"
     />
     <mu-flat-button
       label="Aloha"

@@ -8,6 +8,9 @@ import { sync } from 'vuex-router-sync'
 // muse-ui
 import '@muse-ui/styles/base.less'
 
+// firebase
+import './initFirebase'
+
 Vue.config.productionTip = false
 
 // sync the router with the vuex store.
