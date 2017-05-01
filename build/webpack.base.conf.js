@@ -34,6 +34,10 @@ module.exports = {
         loader: 'babel-loader'
       },
       {
+        test: require.resolve('weakmap'),
+        use: 'imports-loader?module=>undefined,exports=>undefined'
+      },
+      {
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
         enforce: 'pre',
