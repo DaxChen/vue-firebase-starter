@@ -64,6 +64,38 @@ will make window.firebase available during development for easier debugging, but
 
 When importing, the `@` sign is aliased to `src` directory, so no need to use `../../../` in nested directories anymore, just use `@/store`, `@/components`, etc.
 
+## Static folder path
+
+Different from the [default settings of vue-cli webpack template](https://vuejs-templates.github.io/webpack/static.html), I changed the `assetsSubDirectory` from `'static'` to `''`.
+This means that everything you put in the `static/*` folder will be copied to the root of `dist/*`, instead of `dist/static/*`.
+
+I did this because Netlify's `_redirects` needs to be in the root of the published directory `dist/`, see the following `Deploy/Netlify` section for more info.
+
+## Deploy
+
+### favicon
+
+I recommend http://realfavicongenerator.net/, the best favicon generator I've used!
+
+Just follow the instruction and put the extracted files in the `static/` folder, and override the `<head></head>` section in `index.html`.
+
+### Netlify
+
+I highly recommend you try out [Netlify](https://www.netlify.com/) if you haven't!
+
+Just signup, choose your `GitHub/GitLab/BitBucket` account and repo, put in two settings:
+
+- build command: `yarn build`
+- Publish directory: `dist`
+
+And you're all set! Every time you push to the chosen branch, you're site rebuilds and deploys automatically!
+
+#### _redirects
+
+To use Netlify with vue-router (or any other SPA), we need to setup a `_redirects` file in the root of the published directory (NOT the root of project).
+
+This is already done for you, check out `statics/_redirects`.
+
 <!--## Muse-ui
 Components are loaded separately to minimize the bundle size,
 therefore, you'll need to import component and register them one by one when using.
