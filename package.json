@@ -1,7 +1,7 @@
 {
-  "name": "sayse-web-firebase",
+  "name": "vue-firebase-starter",
   "version": "1.0.0",
-  "description": "saySE website with firebase serverless, scaffold with vue-cli:webpack",
+  "description": "boilerplate of vue/vuex/vue(x)-router, with sass/prerendering, muse-ui, and firebase/firebaseui",
   "author": "DaxChen <dd@daxchen.com>",
   "private": true,
   "scripts": {

@@ -1,0 +1,3 @@
+# This is the redirects settings for netlify
+# see: https://www.netlify.com/docs/redirects/#history-pushstate-and-single-page-apps
+/*    /index.html   200
