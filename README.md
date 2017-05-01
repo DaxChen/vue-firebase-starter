@@ -42,7 +42,29 @@ npm test
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-## Muse-ui
+## Globals
+
+### `__DEV__`
+There is a `__DEV__` variable that is defined by webpack, and will be replaced during compile time.
+Therefore, you can use this in your code to separate debug code and production code.
+
+For example, this
+
+```js
+if (__DEV__) {
+  window.firebase = firebase
+}
+```
+
+will make window.firebase available during development for easier debugging, but will be trimmed out when building for produciton.
+
+## Aliases
+
+### `@` = `src`
+
+When importing, the `@` sign is aliased to `src` directory, so no need to use `../../../` in nested directories anymore, just use `@/store`, `@/components`, etc.
+
+<!--## Muse-ui
 Components are loaded separately to minimize the bundle size,
 therefore, you'll need to import component and register them one by one when using.
 
@@ -71,4 +93,4 @@ export default {
 Note:
 1. In order to use `<mu-flat-button />` in html, I use the name `MuFlatButton`
 to register, because [vue converts camelCase in js to kebab-case in html](https://vuejs.org/v2/guide/components.html#camelCase-vs-kebab-case)
-2. As you can see in the import section, the path starts with `@muse-ui` instead of just `muse-ui`, as mentioned earlier. But how do I know what the name is for each component? Well, [they're all in the `muse-ui/src` folder](https://github.com/museui/muse-ui/tree/master/src), so you have to find them in there by yourself... (see how `menuItem`'s location is so hidden...)
+2. As you can see in the import section, the path starts with `@muse-ui` instead of just `muse-ui`, as mentioned earlier. But how do I know what the name is for each component? Well, [they're all in the `muse-ui/src` folder](https://github.com/museui/muse-ui/tree/master/src), so you have to find them in there by yourself... (see how `menuItem`'s location is so hidden...)-->
