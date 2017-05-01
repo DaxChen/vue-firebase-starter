@@ -1,5 +1,7 @@
-# vue-boilterplate
-my boilerplate with vue/vuex/vue(x)-router, with sass/prerendering, and muse-ui!
+# vue-firebase-starter
+My boilerplate using vue/vuex/vue(x)-router, with sass/prerendering, muse-ui, and firebase/firebaseui!
+
+## [Online Demo](https://vue-firebase-starter.netlify.com/)
 
 [![Standard - JavaScript Style
 Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
@@ -8,36 +10,25 @@ Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.
 
 ``` bash
 # install dependencies
-yarn
-# or
-npm install
+yarn # or `npm install`
 
 # serve with hot reload at localhost:8080
-yarn dev
-# or
-npm run dev
+yarn dev # or `npm run dev`
 
 # build for production with minification and prerendering
-yarn build
-# or
-npm run build
+yarn build # or `npm run build`
 
 # build for production and view the bundle analyzer report
 npm run build --report
 
 # run unit tests
-yarn run unit
-# or
-npm run unit
+yarn run unit # or `npm run unit`
 
 # run e2e tests
-yarn run e2e
-# or
-npm run e2e
+yarn run e2e # or `npm run e2e`
 
 # run all tests
-yarn test
-npm test
+yarn test # or `npm test`
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
