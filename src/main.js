@@ -8,6 +8,11 @@ import store from './store'
 import router from './router'
 import { sync } from 'vuex-router-sync'
 
+// Enable progressive web app support (with offline-plugin)
+if (process.env.NODE_ENV === 'production') {
+  require('./pwa')
+}
+
 // muse-ui
 // import '@muse-ui/styles/base.less'
 // TODO: import components separately before production

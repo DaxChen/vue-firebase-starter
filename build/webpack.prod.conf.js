@@ -9,6 +9,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 var PrerenderSpaPlugin = require('prerender-spa-plugin')
+var OfflinePlugin = require('offline-plugin')
 
 var env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
@@ -104,7 +105,37 @@ var webpackConfig = merge(baseWebpackConfig, {
       // If you also wanted to prerender /about and /contact,
       // then this would be [ '/', '/about', '/contact' ]
       [ '/' ]
-    )
+    ),
+    // it's always better if OfflinePlugin is the last plugin added
+    new OfflinePlugin({
+      safeToUseOptionalCaches: true,
+      caches: {
+        main: [
+          'css/app.*.css',
+          'js/vendor.*.js',
+          'js/app.*.js',
+          '/'
+        ],
+        additional: [
+          ':externals:'
+        ],
+        optional: [
+          ':rest:'
+        ]
+      },
+      externals: [
+        // list assets that are not bundled by webpack here to cache them
+        '/'
+      ],
+      ServiceWorker: {
+        events: true,
+        navigateFallbackURL: '/',
+        publicPath: '/sw.js'
+      },
+      AppCache: {
+        FALLBACK: { '/': '/' }
+      }
+    })
   ]
 })
 
