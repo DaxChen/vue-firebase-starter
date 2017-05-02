@@ -108,6 +108,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     ),
     // it's always better if OfflinePlugin is the last plugin added
     new OfflinePlugin({
+      safeToUseOptionalCaches: true,
       caches: {
         main: [
           'css/app.*.css',
@@ -131,7 +132,9 @@ var webpackConfig = merge(baseWebpackConfig, {
         navigateFallbackURL: '/',
         publicPath: '/sw.js'
       },
-      AppCache: false
+      AppCache: {
+        FALLBACK: { '/': '/' }
+      }
     })
   ]
 })
