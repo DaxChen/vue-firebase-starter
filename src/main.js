@@ -1,3 +1,5 @@
+/* This is the entry point */
+
 // polyfills
 import 'es6-promise/auto'
 import 'weakmap' // for vuexfire, using (imports-loader)
@@ -26,8 +28,7 @@ import './initFirebase'
 
 Vue.config.productionTip = false
 
-// sync the router with the vuex store.
-// this registers `store.state.route`
+// Sync the router with the vuex store. This registers `store.state.route`
 sync(store, router)
 
 /* eslint-disable no-new */
