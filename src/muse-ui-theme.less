@@ -1,0 +1,48 @@
+@import "~muse-ui/less/vars.less"; // default variable
+
+/*
+Watch the video and choose colors from the color palette
+https://material.io/guidelines/style/color.html
+*/
+
+// Primary and Accent colors
+@primaryColor: @cyan500;
+@darkerPrimaryColor: @cyan700;
+@lighterPrimaryColor: @cyan300;
+@accentColor: @pinkA200;
+@darkerAccentColor: @pinkA400;
+@lighterAccentColor: @pinkA100;
+
+// Text
+@fontFamily: Roboto, Lato, sans-serif;
+@textColor: @darkBlack;
+@secondaryTextColor: fade(@fullBlack, 54%);
+@alternateTextColor: @white;
+@borderColor: fade(@fullBlack, 12%);
+@disabledColor: fade(@fullBlack, 38%);
+
+// Background
+@backgroundColor: @white;
+// @statusBarBackgroundColor: @fullBlack; // not used in muse-ui
+// @appbarBackgroundColor: @grey900; // not used in muse-ui
+@dialogBackgroundColor: @white; // dialogs, cards, paper background
+
+// Icon
+@activeIconColor: fade(@fullWhite, 100%);
+@inActiveIconColor: fade(@fullWhite, 50%);
+
+@import "~muse-ui/less/theme-vars.less";  // default component variable
+
+// Override component variables
+@avatarBackgroundColor: lighten(@alternateTextColor, 26%);
+@datePickerHeaderColor: fade(@fullWhite, 12%);
+@timePickerHeaderColor: fade(@fullWhite, 12%);
+@timePickerClockCircleColor: fade(@fullWhite, 12%);
+@avatarBackgroundColor: lighten(@alternateTextColor, 26%);
+@chipColor: lighten(@alternateTextColor, 12%);
+@floatButtonDisabledColor: lighten(@alternateTextColor, 12%);
+
+@tableRowHoverBackgroundColor: fade(@textColor, 10%);
+@tableRowSelectedBackgroundColor: fade(@textColor, 5%);
+
+@import "~muse-ui/less/theme.less"; // style related to theme

@@ -1,3 +1,5 @@
+/* This is the entry point */
+
 // polyfills
 import 'es6-promise/auto'
 import 'weakmap' // for vuexfire, using (imports-loader)
@@ -18,6 +20,7 @@ if (process.env.NODE_ENV === 'production') {
 // TODO: import components separately before production
 import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
+import './muse-ui-theme.less'
 Vue.use(MuseUI)
 
 // firebase
@@ -25,8 +28,7 @@ import './initFirebase'
 
 Vue.config.productionTip = false
 
-// sync the router with the vuex store.
-// this registers `store.state.route`
+// Sync the router with the vuex store. This registers `store.state.route`
 sync(store, router)
 
 /* eslint-disable no-new */
