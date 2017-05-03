@@ -1,12 +1,35 @@
-# vue-firebase-starter
-My progressive web app (PWA) boilerplate using vue/vuex/vue(x)-router/offline-plugin, with sass, prerendering, muse-ui, and firebase/firebaseui!
+<h1 align="center">vue-firebase-starter</h1>
+
+<p align="center">
+  <a href="https://github.com/feross/standard">
+    <img src="https://cdn.rawgit.com/feross/standard/master/badge.svg" alt="Standard - JavaScript Style Guide">
+  </a>
+</p>
+
+<p align="center">
+Progressive Web App (PWA) starter-kit using vue/vuex/vue(x)-router/offline-plugin, with sass, prerendering, muse-ui, and firebase/firebaseui!
+</p>
+
+
 
 ## Features
 
+Everything in `vue-cli:webpack` (hot reloading/vue file/webpack2/eslint/postcss+sass+stylus+less/...), plus:
+
+<!--TODO: add emoji and links and descriptions-->
+
+- vue / vuex / vue-router / vuex-router-sync
+- firebase
+- vuexfire
+- firebaseui
+- muse-ui
+- Offline Ready, Progressive Web App (PWA)
+- prerendering for better SEO
+<!--TODO - tracking library with offline support-->
+
+
 ## [Online Demo](https://vue-firebase-starter.netlify.com/)
 
-[![Standard - JavaScript Style
-Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 ## Build Commands
 
