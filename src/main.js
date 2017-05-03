@@ -18,6 +18,7 @@ if (process.env.NODE_ENV === 'production') {
 // TODO: import components separately before production
 import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
+import './muse-ui-theme.less'
 Vue.use(MuseUI)
 
 // firebase
